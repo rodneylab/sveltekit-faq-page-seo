@@ -1,28 +1,33 @@
 <script>
   import Question from '$lib/components/Question.svelte';
-  import '@fontsource/dm-sans';
-  import faqs from '$lib/data/faqs.json';
   import SEO from '$lib/components/SEO.svelte';
   import website from '$lib/configuration/website';
+  import faqs from '$lib/data/faqs.json';
+  import '@fontsource/dm-sans';
 
   const { siteUrl } = website;
   const title = 'SvelteKit FAQ Page with SEO';
   const url = `${siteUrl}/`;
+  const faqCount = faqs.length;
 </script>
 
 <SEO
   {url}
   {title}
-  faqCount={faqs.length}
+  {faqCount}
   seoMetaDescription="Demo site for FAQ page using SvelteKit with SchemaOrg FAQ metadata"
 />
 <main class="container">
-  <section class="content">
+  <div class="content">
     <h1>SvelteKit FAQs</h1>
-    {#each faqs as { question, answer }, index}
-      <Question id={`question-${index + 1}`} {question} {answer} position={index + 1} {url} />
-    {/each}
-  </section>
+    <section role="feed">
+      {#each faqs as { question, answer }, index}
+        <article aria-posinset={index + 1} aria-setsize={faqCount}>
+          <Question id={`question-${index + 1}`} {question} {answer} position={index + 1} {url} />
+        </article>
+      {/each}
+    </section>
+  </div>
 </main>
 
 <style>
@@ -44,7 +49,8 @@
 
   :global(h1) {
     font-size: var(--font-size-7);
-    margin-bottom: var(--spacing-0);
+    margin-top: var(--spacing-0);
+    margin-bottom: var(--spacing-2);
   }
 
   :global(:root) {
@@ -80,6 +86,7 @@
     --spacing-2: 0.5rem;
     --spacing-4: 1rem;
     --spacing-6: 1.5rem;
+    --spacing-8: 2rem;
     --spacing-12: 3rem;
     --spacing-20: 5rem;
 
@@ -102,7 +109,7 @@
   .content {
     display: flex;
     flex-direction: column;
-    margin: var(--spacing-6) var(--spacing-4);
+    margin: var(--spacing-4) var(--spacing-4) var(--spacing-8);
     width: 100%;
   }
 
@@ -112,7 +119,7 @@
     }
 
     .content {
-      margin: var(--spacing-12) var(--spacing-20);
+      margin: var(--spacing-8) var(--spacing-20) var(--spacing-12);
     }
   }
 </style>
