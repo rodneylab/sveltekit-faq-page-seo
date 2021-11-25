@@ -114,10 +114,6 @@
   }
 
   @media (min-width: 768px) {
-    :global(h1) {
-      font-size: var(--font-size-7);
-    }
-
     .content {
       margin: var(--spacing-8) var(--spacing-20) var(--spacing-12);
     }
