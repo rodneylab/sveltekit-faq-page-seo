@@ -79,13 +79,9 @@
     --colour-light-saturation: 60%;
     --colour-light-luminance: 93%;
 
-    --spacing-px: 0.0625rem;
-    --spacing-px-2: 0.125rem;
     --spacing-0: 0;
-    --spacing-1: 0.25rem;
     --spacing-2: 0.5rem;
     --spacing-4: 1rem;
-    --spacing-6: 1.5rem;
     --spacing-8: 2rem;
     --spacing-12: 3rem;
     --spacing-20: 5rem;
@@ -93,7 +89,6 @@
     --font-size-1: 1rem;
     --font-size-2: 1.25rem;
     --font-size-7: 3.815rem;
-    --mobile-font-size-2: 1.125rem;
 
     --font-weight-medium: 500;
 
