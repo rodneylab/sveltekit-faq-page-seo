@@ -1,8 +1,9 @@
 {
   "name": "sveltekit-faq-seo",
   "version": "0.0.1",
+  "description": "SvelteKit SEO: how to use SvelteKit to add search engine optimisation metadata so that social images appear when visitors share posts.",
   "scripts": {
-    "dev": "svelte-kit dev --port 3030",
+    "dev": "svelte-kit dev --port 3000",
     "build": "svelte-kit build",
     "package": "svelte-kit package",
     "preview": "svelte-kit preview --port 3000",
@@ -32,5 +33,12 @@
     "svelte": "^3.48.0",
     "svelte-check": "^2.7.0"
   },
-  "type": "module"
+  "type": "module",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/rodneylab/sveltekit-faq-page-seo"
+  },
+  "bugs": {
+    "url": "https://github.com/rodneylab/sveltekit-faq-page-seo/issues"
+  }
 }
