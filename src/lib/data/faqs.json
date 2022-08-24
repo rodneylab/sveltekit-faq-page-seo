@@ -1,22 +1,22 @@
 [
-  {
-    "question": "What is the deal with SvelteKit?",
-    "answer": "SvelteKit is an awesome tool for building fast websites and web apps.  Its secret powers lie in the compiler at Svelte's heart.  This lets Svelte generate pure JavaScript which is interpreted by the user browser.  This is contrast to other frameworks where an additional step of generating JavaScript in the browser is required.  SvelteKit is to Svelte what Next is to React, it is a tool for creating Svelte apps."
-  },
-  {
-    "question": "Is SvelteKit ready for production?",
-    "answer": "SvelteKit is already used in a number of production website globally."
-  },
-  {
-    "question": "Does SvelteKit use vite?",
-    "answer": "Yes. vite, like snowpack is a next generation bundler, building on advances earlier made by more established tools like WebPack.  Among the advantages are faster hot module reloading and better tree shaking.  These benefits come from using ES Modules."
-  },
-  {
-    "question": "Is SvelteKit still in beta?",
-    "answer": "Yes, SvelteKit is still in beta. Despite that it is already used in a number of production websites."
-  },
-  {
-    "question": "How do you deploy SvelteKit?",
-    "answer": "You can deploy SvelteKit apps as static sites or Server Side Rendered apps.  Leading hosting services like Cloudflare, Netlify, Render and Vercel all support SvelteKit."
-  }
+	{
+		"question": "What is the deal with SvelteKit?",
+		"answer": "SvelteKit is an awesome tool for building fast websites and web apps.  Its secret powers lie in the compiler at Svelte's heart.  This lets Svelte generate pure JavaScript which is interpreted by the user browser.  This is contrast to other frameworks where an additional step of generating JavaScript in the browser is required.  SvelteKit is to Svelte what Next is to React, it is a tool for creating Svelte apps."
+	},
+	{
+		"question": "Is SvelteKit ready for production?",
+		"answer": "SvelteKit is already used in a number of production website globally."
+	},
+	{
+		"question": "Does SvelteKit use vite?",
+		"answer": "Yes. vite, like snowpack is a next generation bundler, building on advances earlier made by more established tools like WebPack.  Among the advantages are faster hot module reloading and better tree shaking.  These benefits come from using ES Modules."
+	},
+	{
+		"question": "Is SvelteKit still in beta?",
+		"answer": "Yes, SvelteKit is still in beta. Despite that it is already used in a number of production websites."
+	},
+	{
+		"question": "How do you deploy SvelteKit?",
+		"answer": "You can deploy SvelteKit apps as static sites or Server Side Rendered apps.  Leading hosting services like Cloudflare, Netlify, Render and Vercel all support SvelteKit."
+	}
 ]
