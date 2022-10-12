@@ -1,5 +1,7 @@
+import { PUBLIC_SITE_URL } from '$env/static/public';
+
 const website = {
-	siteUrl: import.meta.env.VITE_SITE_URL ?? '',
+	siteUrl: PUBLIC_SITE_URL,
 };
 
 export default website;
