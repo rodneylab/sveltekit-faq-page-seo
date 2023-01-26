@@ -51,7 +51,6 @@
 
 <svelte:head>
 	<title>{title}</title>
-	<html lang="en-GB" />
 	<meta name="description" content={seoMetaDescription} />
 	{@html jsonLdScript}
 </svelte:head>
