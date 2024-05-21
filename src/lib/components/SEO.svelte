@@ -23,7 +23,7 @@
 					mainEntity: Array.from({ length: faqCount }, (_, index) => index + 1).map((element) => ({
 						'@id': `${url}#question-${element}`,
 					})),
-			  }
+				}
 			: {}),
 		datePublished,
 		dateModified,
