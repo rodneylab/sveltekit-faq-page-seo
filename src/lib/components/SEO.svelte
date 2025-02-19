@@ -1,11 +1,13 @@
 <script>
-	export let datePublished = process.env.VITE_BUILD_TIME;
-	export let dateModified = process.env.VITE_BUILD_TIME;
-	export let seoMetaDescription;
-	export let url;
-	export let language = 'en-GB';
-	export let faqCount;
-	export let title;
+	let {
+		datePublished = process.env.VITE_BUILD_TIME,
+		dateModified = process.env.VITE_BUILD_TIME,
+		seoMetaDescription,
+		url,
+		language = 'en-GB',
+		faqCount,
+		title,
+	} = $props();
 
 	const schemaOrgWebPage = {
 		'@type': ['WebPage', ...(faqCount > 0 ? ['FAQPage'] : [])],
@@ -52,5 +54,6 @@
 <svelte:head>
 	<title>{title}</title>
 	<meta name="description" content={seoMetaDescription} />
+	<!-- eslint-disable-next-line svelte/no-at-html-tags -->
 	{@html jsonLdScript}
 </svelte:head>

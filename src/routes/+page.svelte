@@ -3,8 +3,8 @@
 	import SEO from '$lib/components/SEO.svelte';
 	import website from '$lib/configuration/website';
 	import faqs from '$lib/data/faqs.json';
-	import '@fontsource/dm-sans';
 	import '$lib/styles/global.css';
+	import '@fontsource/dm-sans';
 
 	const { siteUrl } = website;
 	const title = 'SvelteKit FAQ Page with SEO';
