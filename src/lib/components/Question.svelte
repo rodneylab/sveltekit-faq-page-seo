@@ -1,10 +1,5 @@
 <script>
-	export let question;
-	export let answer;
-	export let position;
-	export let id;
-	export let url;
-	export let language = 'en-GB';
+	let { question, answer, position, id, url, language = 'en-GB' } = $props();
 
 	const schemaOrgQuestionObject = {
 		'@context': 'https://schema.org',
@@ -30,6 +25,7 @@
 </script>
 
 <svelte:head>
+	<!-- eslint-disable-next-line svelte/no-at-html-tags -->
 	{@html jsonLdScript}
 </svelte:head>
 
